@@ -1,11 +1,10 @@
+// ExpressJS backend starter code
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 5000;
+const port = 3000;
 
-app.get('/', (req, res) => {
-    res.send('Welcome to Rate My Store API');
-});
+app.get('/', (req, res) => res.send('Hello from Express!'));
 
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
 });
